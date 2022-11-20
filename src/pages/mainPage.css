@@ -1,0 +1,261 @@
+.container {
+    background-color: lavender;
+}
+
+.intro {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-image: url("../img/bg1.jpg");
+}
+
+.topbar {
+    width: 100%;
+}
+
+.btnContainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 3vh 0vh;
+}
+
+.btn {
+    all: unset;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 3px;
+    color: whitesmoke;
+    font-family: sans-serif;
+}
+
+.name {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    color: whitesmoke;
+    gap: 5vh;
+}
+
+.booking {
+    font-size: 2vh;
+}
+
+.brandName {
+    font-size: 6vh;
+    font-style: italic;
+}
+
+.arrow {
+    font-size: 8vh;
+    color: whitesmoke;
+}
+
+.whatWeDo1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.upperContainer {
+    width: 100%;
+}
+
+.upperTxt {
+    font-size: 4vw;
+    font-family: sans-serif;
+    font-style: italic;
+    color: cadetblue;
+    margin-left: 5vw;
+    margin-right: 20vw;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    overflow: hidden;
+}
+
+.lowerContainer {
+    display: flex;
+}
+
+.leftContainer {
+    flex: 1;
+    flex-direction: column;
+    margin-right: 10px;
+}
+
+.leftTxt {
+    font-size: 2.5vw;
+    color: gray;
+    margin-left: 8vw;
+    margin-top: 10vh;
+    margin-bottom: 5vh;
+}
+
+.rightContainer {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    /* margin-top: 5vh; */
+    /* margin-bottom: 5vh; */
+}
+
+.leftImg1,
+.rightImg1,
+.rightImg2,
+.rightImg3 {
+    max-width: 100%;
+    height: auto;
+    margin: 20px;
+}
+
+.whatWeDo2 {
+    height: 100vh;
+    background-image: url("../img/bg2.jpg");
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.whatWeDo2>div {
+    width: 70%;
+    gap: 5vh;
+}
+
+.whatWeDo2>div>h1 {
+    font-size: 4vw;
+    color: aliceblue;
+    text-align: center;
+}
+
+.whatWeDo2>div>h6 {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 2vw;
+    color: aliceblue;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 30vh;
+}
+
+.headingContainer {
+    margin: 2vw;
+    color: cadetblue;
+
+}
+
+.headingTxt {
+    font-size: 5vw;
+    font-family: serif;
+
+}
+
+.aboutDetail {
+    display: flex;
+    margin: 0vw 2vw;
+}
+
+.aboutTxtContainer {
+    flex: 2;
+    padding-right: 7vw;
+}
+
+.aboutTxt {
+    font-size: 20px;
+    line-height: 35px;
+    text-align: left;
+    color: gray;
+    padding-left: 7vw;
+}
+
+.aboutPicContainer {
+    flex: 1;
+}
+
+.aboutPic {
+    max-width: 100%;
+    height: auto;
+}
+
+.featured {
+    height: 100vh;
+    background-image: url("../img/bg3.jpg");
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.featuredTxt {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.featuredTxt>h1 {
+    text-align: center;
+    font-size: 4vw;
+    color: whitesmoke;
+}
+
+.featuredTxt>p {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 2vw;
+    color: whitesmoke;
+}
+
+.contactContainer {
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 10vh;
+
+}
+
+.logos {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: space-evenly;
+}
+
+.fa-brands {
+    position: absolute;
+    font-size: 5vw;
+    cursor: pointer;
+    color: cadetblue;
+    transition: font-size 700ms;
+}
+
+.fa-instagram {
+    left: 22%;
+    top: 0;
+}
+
+.fa-facebook-f {
+    left: 47%;
+    top: 0;
+}
+
+.fa-pinterest-p {
+    left: 72%;
+    top: 0;
+}
+
+.fa-brands:hover {
+    font-size: 7vw;
+}
