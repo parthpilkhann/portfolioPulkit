@@ -1,3 +1,10 @@
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+
 .container {
     background-color: lavender;
 }
@@ -9,7 +16,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    background-image: url("../img/bg1.jpg");
+    /* background-image: url("../img/bg1.jpg");
+        background-attachment: fixed; */
 }
 
 .topbar {
@@ -50,6 +58,7 @@
 .brandName {
     font-size: 6vh;
     font-style: italic;
+    text-align: center;
 }
 
 .arrow {
@@ -68,7 +77,7 @@
 }
 
 .upperTxt {
-    font-size: 4vw;
+    font-size: 2rem;
     font-family: sans-serif;
     font-style: italic;
     color: cadetblue;
@@ -81,18 +90,21 @@
 
 .lowerContainer {
     display: flex;
+    gap: 1em;
+
 }
 
 .leftContainer {
     flex: 1;
     flex-direction: column;
-    margin-right: 10px;
+    /* margin-right: 1em; */
+    margin-inline: auto;
+    width: min(90%, 70.5rem);
 }
 
 .leftTxt {
-    font-size: 2.5vw;
+    font-size: 1.2rem;
     color: gray;
-    margin-left: 8vw;
     margin-top: 10vh;
     margin-bottom: 5vh;
 }
@@ -101,28 +113,36 @@
     flex: 1;
     display: flex;
     flex-direction: column;
-    margin-left: 10px;
-    /* margin-top: 5vh; */
-    /* margin-bottom: 5vh; */
+    margin-inline: auto;
+    width: min(90%, 70.5rem)
 }
 
-.leftImg1,
+.leftImg1 {
+    max-width: 100%;
+    display: block;
+}
+
 .rightImg1,
 .rightImg2,
 .rightImg3 {
     max-width: 100%;
-    height: auto;
-    margin: 20px;
+    display: block;
+    margin: 0.5em 0;
+}
+
+.rightImg3 {
+    margin-bottom: 3em;
 }
 
 .whatWeDo2 {
     height: 100vh;
-    background-image: url("../img/bg2.jpg");
+    /* background-image: url("../img/bg2.jpg");
+        background-attachment: fixed; */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 10px;
+    /* margin-top: 5em; */
 }
 
 .whatWeDo2>div {
@@ -131,7 +151,7 @@
 }
 
 .whatWeDo2>div>h1 {
-    font-size: 4vw;
+    font-size: 2rem;
     color: aliceblue;
     text-align: center;
 }
@@ -139,31 +159,34 @@
 .whatWeDo2>div>h6 {
     margin-top: 30px;
     text-align: center;
-    font-size: 2vw;
+    font-size: 1rem;
     color: aliceblue;
 }
 
 .about {
     display: flex;
     flex-direction: column;
-    padding-bottom: 30vh;
+    padding-bottom: 15vh;
+    margin-inline: auto;
+    width: min(90%, 70.5rem)
 }
 
 .headingContainer {
-    margin: 2vw;
+    margin-top: 7vh;
+    margin-bottom: 5vh;
     color: cadetblue;
 
 }
 
 .headingTxt {
-    font-size: 5vw;
+    font-size: 3rem;
     font-family: serif;
 
 }
 
 .aboutDetail {
     display: flex;
-    margin: 0vw 2vw;
+    /* margin: 0vw 2vw; */
 }
 
 .aboutTxtContainer {
@@ -172,11 +195,11 @@
 }
 
 .aboutTxt {
-    font-size: 20px;
-    line-height: 35px;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
     text-align: left;
     color: gray;
-    padding-left: 7vw;
+    padding-left: 4vw;
 }
 
 .aboutPicContainer {
@@ -190,7 +213,9 @@
 
 .featured {
     height: 100vh;
-    background-image: url("../img/bg3.jpg");
+    /* background-image: url("../img/bg3.jpg");
+        background-attachment: fixed; */
+    background-position: center;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -205,24 +230,24 @@
 
 .featuredTxt>h1 {
     text-align: center;
-    font-size: 4vw;
+    font-size: 2rem;
     color: whitesmoke;
 }
 
 .featuredTxt>p {
     margin-top: 30px;
     text-align: center;
-    font-size: 2vw;
+    font-size: 1.3rem;
     color: whitesmoke;
 }
 
 .contactContainer {
-    height: 40vh;
+    height: 20vh;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: end;
+    flex-direction: column;
     padding-bottom: 10vh;
-
 }
 
 .logos {
@@ -235,27 +260,80 @@
 
 .fa-brands {
     position: absolute;
-    font-size: 5vw;
+    font-size: 2rem;
     cursor: pointer;
     color: cadetblue;
-    transition: font-size 700ms;
+    transition: transform 700ms;
 }
 
 .fa-instagram {
-    left: 22%;
+    left: 38.5%;
     top: 0;
 }
 
 .fa-facebook-f {
-    left: 47%;
+    left: 48.5%;
     top: 0;
 }
 
 .fa-pinterest-p {
-    left: 72%;
+    left: 58.5%;
     top: 0;
 }
 
 .fa-brands:hover {
-    font-size: 7vw;
+    transform: scale(1.5);
+}
+
+.contactDetails {
+    /* position: relative;
+    top: 5em;
+    left: -0.9em; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.contactDetails>p {
+    height: 17vh;
+    font-size: 1.2rem;
+    color: cadetblue;
+
+}
+
+.contactDetails>p>a {
+    font-size: 1.2rem;
+    text-decoration: none !important;
+    color: inherit;
+}
+
+
+
+
+@media screen and (min-width: 601px) {
+    .lowerContainer {
+        margin-inline: auto;
+        width: min(90%, 70.5rem)
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .lowerContainer {
+        flex-direction: column;
+    }
+
+    .aboutDetail {
+        flex-direction: column-reverse;
+    }
+
+    .aboutTxtContainer {
+        padding-right: 0vw;
+    }
+
+    /* .contactDetails {
+        position: relative;
+        top: 5em;
+        left: 5em;
+    } */
 }
