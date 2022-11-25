@@ -226,6 +226,8 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    margin-inline: auto;
+    width: min(90%, 70.5rem)
 }
 
 .featuredTxt>h1 {
@@ -239,13 +241,14 @@
     text-align: center;
     font-size: 1.3rem;
     color: whitesmoke;
+    line-height: 2rem;
 }
 
 .contactContainer {
     height: 20vh;
     display: flex;
     align-items: center;
-    justify-content: end;
+    justify-content: flex-end;
     flex-direction: column;
     padding-bottom: 10vh;
 }
@@ -276,8 +279,8 @@
     top: 0;
 }
 
-.fa-pinterest-p {
-    left: 58.5%;
+.fa-youtube {
+    left: 58%;
     top: 0;
 }
 

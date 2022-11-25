@@ -2,7 +2,7 @@ import "./mainPage.css";
 import { Parallax } from "react-parallax";
 import Bg1 from "../img/bg1.jpg"
 import Bg2 from "../img/bg2.jpg"
-import Bg3 from "../img/bg3.jpg"
+import Bg3 from "../img/bg3.jpeg"
 
 export default function MainPage() {
 
@@ -33,12 +33,12 @@ export default function MainPage() {
       <div className="whatWeDo1">
         <div className="upperContainer">
           <p className="upperTxt">
-            Lorem ipsum, dolor sit amet consectetur reiciendis aut ea earum alias aliquam dolorum fugiat incidunt?
+          COMBINING TRUE EMOTIONS & AN EDITORIAL STYLE TO CREATE TIMELESS + BOLD IMAGERY.
           </p>
         </div>
         <div className="lowerContainer">
           <div className="leftContainer">
-            <p className='leftTxt' >Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, veritatis. Natus sed quod quia laudantium?</p>
+            <p className='leftTxt' >For the the couple who wants to stand out, embrace their quirks, be creative, collaborative and bold, and have the freaking best time on their wedding day!</p>
             <img className='leftImg1' src={require("../img/l1.jpg")} alt="not found" />
             {/* <Breakpoint m down >
               <img className='rightImg2' src={require("../img/r1.jpg")} alt="not found" />
@@ -67,14 +67,13 @@ export default function MainPage() {
       <div className="about">
         <div className="headingContainer">
           <h1 className="headingTxt">
-            We're The 'Creating Tales'
+            About Me
           </h1>
         </div>
         <div className="aboutDetail">
           <div className="aboutTxtContainer">
             <p className="aboutTxt">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam exercitationem reprehenderit deserunt earum dolorem nam aliquid deleniti consectetur quam, eius fugiat repudiandae atque itaque aliquam excepturi obcaecati. Earum quia, quos eum nulla voluptatum suscipit, ut officia saepe facilis corporis blanditiis laudantium quas natus nostrum molestiae vel possimus numquam, repudiandae perspiciatis
-              repellat sit voluptate aut. Cupiditate nostrum consequatur ipsum id, hic consequuntur eius, nulla architecto dolorem sed placeat magnam odio. Omnis consequuntur animi, corporis ullam dolores numquam quo quibusdam. Accusamus eaque aliquid reprehenderit. Culpa, libero error ex beatae facere necessitatibus vero nobis reiciendis debitis labore cum accusamus cupiditate quo, fugiat minus!
+              Pulkit is a photographer and a filmmaker currently based in Dehradun, India. His work has a vintage taste and explores the unusual beauty of the human face.He was a winner & among the Top 10 Fashion Photographers of Fashion Design Council of India's Wall of Frame Contest. His film has also been a winner in International Rare Disease Film Festival, Berlin.
             </p>
           </div>
           <div className="aboutPicContainer">
@@ -94,19 +93,19 @@ export default function MainPage() {
 
       <div className="contactContainer">
         <div className="logos">
-          <a href="http://" target={"_blank"} >
+          <a href="http://instagram.com/creatingtales" target={"_blank"} rel="noreferrer" >
             <i className="fa-brands fa-instagram"></i>
           </a>
-          <a href="http://" target={"_blank"} >
+          <a href="https://www.facebook.com/creatingtales" target={"_blank"} rel="noreferrer" >
             <i className="fa-brands fa-facebook-f"></i>
           </a>
-          <a href="http://" target={"_blank"} >
-            <i className="fa-brands fa-pinterest-p"></i>
+          <a href="https://www.youtube.com/channel/UCtI4qv5yjbQ-TuMRQenmZ2A" target={"_blank"} rel="noreferrer" >
+          <i className="fa-brands fa-youtube"></i>
           </a>
         </div>
       </div>
       <div className="contactDetails">
-        <p>pulkittomar@gmail.com | <a href="http://creatingtales.com">www.creatingtales.com</a></p>
+        <p>pulkittomar@gmail.com | <a target={"_blank"} rel="noreferrer" href="http://creatingtales.com">www.creatingtales.com</a></p>
       </div>
 
     </div>
